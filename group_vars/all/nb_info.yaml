@@ -2,4 +2,5 @@
 nb_host: "https://netbox.nerc.rc.harvard.edu/"
 nb_token: "{{ lookup('amazon.aws.aws_secret', 'api/netbox/hakan') }}"
 nb_site: "mghpcc"
+nb_tenant: "moc"
 nb_tenant_tag: "tenant-moc"

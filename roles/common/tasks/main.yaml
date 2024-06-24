@@ -8,7 +8,34 @@
       name: "{{ inventory_hostname }}"
       device_type: "{{ device_type_mappings[nb_type] }}"
       device_role: "{{ device_role_mappings[nb_role] }}"
+      cluster: "{{ nb_cluster | lower }}"
+      oob_ip: "{{ ansible_host }}"
       site: "{{ nb_site }}"
+      tenant: "{{ nb_tenant }}"
       tags:
         - "{{ nb_tenant_tag }}"
     state: present
+
+# Set device position
+- name: Set Device Position in Netbox
+  netbox.netbox.netbox_device:
+    netbox_url: "{{ nb_host }}"
+    netbox_token: "{{ nb_token }}"
+    data:
+      name: "{{ inventory_hostname }}"
+      rack: "{{ nb_rack }}"
+      face: "front"
+    state: present
+  when: nb_role == "Server" or nb_role == "Chassis" and nb_slot is not defined
+
+# Set parent/child
+- name: Set parent/child relation if required
+  netbox.netbox.netbox_device_bay:
+    netbox_url: "{{ nb_host }}"
+    netbox_token: "{{ nb_token }}"
+    data:
+      device: "{{ nb_parent }}"
+      installed_device: "{{ inventory_hostname }}"
+      name: "{{ nb_slot_mappings[nb_slot] }}"
+    state: present
+  when: nb_role == "Server" and nb_slot is defined
