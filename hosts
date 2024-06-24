@@ -1,6 +1,6 @@
 [R4-PA-C24]
 # R4PAC24U37
-MOC-R4PAC24U37 ansible_host=10.2.11.190 nb_u=37 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U37 ansible_host=10.2.11.190 nb_u=37 nb_type=FX2_FC430 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U37-S1A ansible_host=10.2.11.191 nb_slot=1A nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U37
 MOC-R4PAC24U37-S1B ansible_host=10.2.11.192 nb_slot=1B nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U37
 MOC-R4PAC24U37-S1C ansible_host=10.2.11.193 nb_slot=1C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U37
@@ -10,7 +10,7 @@ MOC-R4PAC24U37-S3B ansible_host=10.2.11.196 nb_slot=3B nb_type=FC430 nb_role=Ser
 MOC-R4PAC24U37-S3C ansible_host=10.2.11.197 nb_slot=3C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U37
 MOC-R4PAC24U37-S3D ansible_host=10.2.11.198 nb_slot=3D nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U37
 # R4PAC24U35
-MOC-R4PAC24U35 ansible_host=10.2.11.180 nb_u=35 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U35 ansible_host=10.2.11.180 nb_u=35 nb_type=FX2_FC430 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U35-S1A ansible_host=10.2.11.181 nb_slot=1A nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U35
 MOC-R4PAC24U35-S1B ansible_host=10.2.11.182 nb_slot=1B nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U35
 MOC-R4PAC24U35-S1C ansible_host=10.2.11.183 nb_slot=1C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U35
@@ -20,7 +20,7 @@ MOC-R4PAC24U35-S3B ansible_host=10.2.11.186 nb_slot=3B nb_type=FC430 nb_role=Ser
 MOC-R4PAC24U35-S3C ansible_host=10.2.11.187 nb_slot=3C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U35
 MOC-R4PAC24U35-S3D ansible_host=10.2.11.188 nb_slot=3D nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U35
 # R4PAC24U33
-MOC-R4PAC24U33 ansible_host=10.2.11.170 nb_u=33 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U33 ansible_host=10.2.11.170 nb_u=33 nb_type=FX2_FC430 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U33-S1A ansible_host=10.2.11.171 nb_slot=1A nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U33
 MOC-R4PAC24U33-S1B ansible_host=10.2.11.172 nb_slot=1B nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U33
 MOC-R4PAC24U33-S1C ansible_host=10.2.11.173 nb_slot=1C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U33
@@ -30,7 +30,7 @@ MOC-R4PAC24U33-S3B ansible_host=10.2.11.176 nb_slot=3B nb_type=FC430 nb_role=Ser
 MOC-R4PAC24U33-S3C ansible_host=10.2.11.177 nb_slot=3C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U33
 MOC-R4PAC24U33-S3D ansible_host=10.2.11.178 nb_slot=3D nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U33
 # R4PAC24U31
-MOC-R4PAC24U31 ansible_host=10.2.11.160 nb_u=31 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U31 ansible_host=10.2.11.160 nb_u=31 nb_type=FX2_FC430 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U31-S1A ansible_host=10.2.11.161 nb_slot=1A nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U31
 MOC-R4PAC24U31-S1B ansible_host=10.2.11.162 nb_slot=1B nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U31
 MOC-R4PAC24U31-S1C ansible_host=10.2.11.163 nb_slot=1C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U31
@@ -40,58 +40,58 @@ MOC-R4PAC24U31-S3B ansible_host=10.2.11.166 nb_slot=3B nb_type=FC430 nb_role=Ser
 MOC-R4PAC24U31-S3C ansible_host=10.2.11.167 nb_slot=3C nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U31
 MOC-R4PAC24U31-S3D ansible_host=10.2.11.168 nb_slot=3D nb_type=FC430 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U31
 # R4PAC24U29
-MOC-R4PAC24U29 ansible_host=10.2.11.150 nb_u=29 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U29 ansible_host=10.2.11.150 nb_u=29 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U29-S1 ansible_host=10.2.11.151 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U29
 MOC-R4PAC24U29-S3 ansible_host=10.2.11.152 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U29
 # R4PAC24U27
-MOC-R4PAC24U27 ansible_host=10.2.11.140 nb_u=27 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U27 ansible_host=10.2.11.140 nb_u=27 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U27-S1 ansible_host=10.2.11.141 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U27
 MOC-R4PAC24U27-S3 ansible_host=10.2.11.142 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U27
 # R4PAC24U25
-MOC-R4PAC24U25 ansible_host=10.2.11.130 nb_u=25 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U25 ansible_host=10.2.11.130 nb_u=25 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U25-S1 ansible_host=10.2.11.131 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U25
 MOC-R4PAC24U25-S3 ansible_host=10.2.11.132 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U25
 # R4PAC24U23
-MOC-R4PAC24U23 ansible_host=10.2.11.120 nb_u=23 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U23 ansible_host=10.2.11.120 nb_u=23 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U23-S1 ansible_host=10.2.11.121 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U23
 MOC-R4PAC24U23-S3 ansible_host=10.2.11.122 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U23
 # R4PAC24U21
-MOC-R4PAC24U21 ansible_host=10.2.11.110 nb_u=21 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U21 ansible_host=10.2.11.110 nb_u=21 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U21-S1 ansible_host=10.2.11.111 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U21
 MOC-R4PAC24U21-S3 ansible_host=10.2.11.112 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U21
 # R4PAC24U19
-MOC-R4PAC24U19 ansible_host=10.2.11.100 nb_u=19 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U19 ansible_host=10.2.11.100 nb_u=19 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U19-S1 ansible_host=10.2.11.101 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U19
 MOC-R4PAC24U19-S3 ansible_host=10.2.11.102 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U19
 # R4PAC24U17
-MOC-R4PAC24U17 ansible_host=10.2.11.90 nb_u=17 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U17 ansible_host=10.2.11.90 nb_u=17 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U17-S1 ansible_host=10.2.11.91 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U17
 MOC-R4PAC24U17-S3 ansible_host=10.2.11.92 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U17
 # R4PAC24U15
-MOC-R4PAC24U15 ansible_host=10.2.11.80 nb_u=15 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U15 ansible_host=10.2.11.80 nb_u=15 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U15-S1 ansible_host=10.2.11.81 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U15
 MOC-R4PAC24U15-S3 ansible_host=10.2.11.82 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U15
 # R4PAC24U13
-MOC-R4PAC24U13 ansible_host=10.2.11.70 nb_u=13 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U13 ansible_host=10.2.11.70 nb_u=13 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U13-S1 ansible_host=10.2.11.71 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U13
 MOC-R4PAC24U13-S3 ansible_host=10.2.11.72 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U13
 # R4PAC24U11
-MOC-R4PAC24U11 ansible_host=10.2.11.60 nb_u=11 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U11 ansible_host=10.2.11.60 nb_u=11 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U11-S1 ansible_host=10.2.11.61 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U11
 MOC-R4PAC24U11-S3 ansible_host=10.2.11.62 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U11
 # R4PAC24U09
-MOC-R4PAC24U09 ansible_host=10.2.11.50 nb_u=9 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U09 ansible_host=10.2.11.50 nb_u=9 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U09-S1 ansible_host=10.2.11.51 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U09
 MOC-R4PAC24U09-S3 ansible_host=10.2.11.52 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U09
 # R4PAC24U07
-MOC-R4PAC24U07 ansible_host=10.2.11.40 nb_u=7 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U07 ansible_host=10.2.11.40 nb_u=7 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U07-S1 ansible_host=10.2.11.41 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U07
 MOC-R4PAC24U07-S3 ansible_host=10.2.11.42 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U07
 # R4PAC24U05
-MOC-R4PAC24U05 ansible_host=10.2.11.30 nb_u=5 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U05 ansible_host=10.2.11.30 nb_u=5 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U05-S1 ansible_host=10.2.11.31 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U05
 MOC-R4PAC24U05-S3 ansible_host=10.2.11.32 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U05
 # R4PAC24U03
-MOC-R4PAC24U03 ansible_host=10.2.11.20 nb_u=3 nb_type=FX2 nb_role=Chassis nb_cluster=MOC-ESI
+MOC-R4PAC24U03 ansible_host=10.2.11.20 nb_u=3 nb_type=FX2_FC830 nb_role=Chassis nb_cluster=MOC-ESI
 MOC-R4PAC24U03-S1 ansible_host=10.2.11.21 nb_slot=1 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U03
 MOC-R4PAC24U03-S3 ansible_host=10.2.11.22 nb_slot=3 nb_type=FC830 nb_role=Server nb_cluster=MOC-ESI nb_parent=MOC-R4PAC24U03

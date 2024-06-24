@@ -1,6 +1,23 @@
 ---
+# Validation
+- name: Check that variables are defined
+  ansible.builtin.fail:
+    msg: "Variable '{{ item }}' is not defined"
+  with_items:
+    - nb_type
+    - nb_role
+    - nb_cluster
+    - ansible_host
+    - nb_host
+    - nb_token
+    - nb_site
+    - nb_tenant
+    - nb_tenant_tag
+    - nb_rack
+  when: item not in vars
+
 # Update device
-- name: Create Device in Netbox without Metadata
+- name: Device
   netbox.netbox.netbox_device:
     netbox_url: "{{ nb_host }}"
     netbox_token: "{{ nb_token }}"
@@ -10,6 +27,8 @@
       device_role: "{{ device_role_mappings[nb_role] }}"
       cluster: "{{ nb_cluster | lower }}"
       oob_ip: "{{ ansible_host }}"
+      rack: "{{ nb_rack | lower }}"
+      face: "front"
       site: "{{ nb_site }}"
       tenant: "{{ nb_tenant }}"
       tags:
@@ -17,19 +36,18 @@
     state: present
 
 # Set device position
-- name: Set Device Position in Netbox
+- name: Device Position in Rack
   netbox.netbox.netbox_device:
     netbox_url: "{{ nb_host }}"
     netbox_token: "{{ nb_token }}"
     data:
       name: "{{ inventory_hostname }}"
-      rack: "{{ nb_rack }}"
-      face: "front"
+      position: "{{ nb_u }}"
     state: present
-  when: nb_role == "Server" or nb_role == "Chassis" and nb_slot is not defined
+  when: nb_role == "Server" and nb_slot is not defined and nb_parent is not defined
 
 # Set parent/child
-- name: Set parent/child relation if required
+- name: Parent Relation
   netbox.netbox.netbox_device_bay:
     netbox_url: "{{ nb_host }}"
     netbox_token: "{{ nb_token }}"
