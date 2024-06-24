@@ -1,0 +1,14 @@
+---
+# Update device
+- name: Create Device in Netbox without Metadata
+  netbox.netbox.netbox_device:
+    netbox_url: "{{ nb_host }}"
+    netbox_token: "{{ nb_token }}"
+    data:
+      name: "{{ inventory_hostname }}"
+      device_type: "{{ device_type_mappings[nb_type] }}"
+      device_role: "{{ device_role_mappings[nb_role] }}"
+      site: "{{ nb_site }}"
+      tags:
+        - "{{ nb_tenant_tag }}"
+    state: present

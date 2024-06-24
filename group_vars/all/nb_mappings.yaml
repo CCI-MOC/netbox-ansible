@@ -1,0 +1,9 @@
+---
+device_type_mappings:
+  FC430: "poweredge-fc430"
+  FC630: "poweredge-fc630"
+  FC830: "poweredge-fc830"
+
+device_role_mappings:
+  Server: "server"
+  Chassis: "server-chassis"
